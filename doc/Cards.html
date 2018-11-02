@@ -82,6 +82,8 @@ Cards              </h1>
   <div class="summary-signature">
     <a href="#contains?/2">contains?(deck, card)</a>
   </div>
+    <div class="summary-synopsis"><p>Determines whether a deck contains a card</p>
+</div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
@@ -142,6 +144,15 @@ Cards              </h1>
     <span class="signature">contains?(deck, card)</span>
           </div>
   <section class="docstring">
+<p>  Determines whether a deck contains a card</p>
+<h2 id="contains?/2-examples" class="section-heading">
+  <a href="#contains?/2-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+
+<pre><code class="nohighlight makeup elixir"><span class="w">  </span><span class="gp unselectable">iex&gt; </span><span class="n">deck</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Cards</span><span class="o">.</span><span class="n">create_deck</span><span class="w">
+  </span><span class="gp unselectable">iex&gt; </span><span class="nc">Cards</span><span class="o">.</span><span class="n">contains?</span><span class="p" data-group-id="0295218365-1">(</span><span class="n">deck</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;King of Hearts&quot;</span><span class="p" data-group-id="0295218365-1">)</span><span class="w">
+  </span><span class="no">true</span></code></pre>
   </section>
 </div>
 <div class="detail" id="create_deck/0">
@@ -185,9 +196,9 @@ Cards              </h1>
 </h2>
 
 <pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">deck</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Cards</span><span class="o">.</span><span class="n">create_deck</span><span class="w">
-</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="9083383332-1">{</span><span class="n">hand</span><span class="p">,</span><span class="w"> </span><span class="n">deck</span><span class="p" data-group-id="9083383332-1">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Cards</span><span class="o">.</span><span class="n">deal</span><span class="p" data-group-id="9083383332-2">(</span><span class="n">deck</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p" data-group-id="9083383332-2">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="1754970435-1">{</span><span class="n">hand</span><span class="p">,</span><span class="w"> </span><span class="n">deck</span><span class="p" data-group-id="1754970435-1">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Cards</span><span class="o">.</span><span class="n">deal</span><span class="p" data-group-id="1754970435-2">(</span><span class="n">deck</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p" data-group-id="1754970435-2">)</span><span class="w">
 </span><span class="gp unselectable">iex&gt; </span><span class="n">hand</span><span class="w">
-</span><span class="p" data-group-id="9083383332-3">[</span><span class="s">&quot;Ace of Spades&quot;</span><span class="p" data-group-id="9083383332-3">]</span></code></pre>
+</span><span class="p" data-group-id="1754970435-3">[</span><span class="s">&quot;Ace of Spades&quot;</span><span class="p" data-group-id="1754970435-3">]</span></code></pre>
   </section>
 </div>
 <div class="detail" id="load/1">
