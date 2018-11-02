@@ -8,12 +8,11 @@ defmodule Cards do
   @doc """
     Returns a list of strings representing a deck of cards
   """
-  #basic method declaration
+
   def create_deck do
     values = ["Ace", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King"]
     suits = ["Spades", "Clubs", "Hearts", "Diamonds"]
 
-    #list comprehension
     for suit <- suits, value <- values do
       "#{value} of #{suit}"
     end
@@ -34,7 +33,7 @@ defmodule Cards do
         true
 
   """
-  #searching a list
+
   def contains?(deck, card) do 
     Enum.member?(deck, card)
   end
@@ -52,12 +51,11 @@ defmodule Cards do
       ["Ace of Spades"]
   """
 
-  #indexes & tuples 
   def deal(deck, hand_size) do
     Enum.split(deck, hand_size)
   end
   
-  #Pattern Matching, saving to file & ERLANG relationship
+
   def save(deck, filename) do
     binary = :erlang.term_to_binary(deck)
     File.write(filename, binary)
